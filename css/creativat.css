@@ -12,10 +12,6 @@ body {
     margin:0 auto;
     /*padding: 20px;*/
 }
-footer {
-	padding: 0px 20px;
-	margin: 0 auto;
-}
 
 /*------------ HEADER ----------------*/
 #padre_header {
@@ -98,7 +94,9 @@ main {
 }
 
 /*---------------FOOTER---------------------*/
-.footer {
+footer {
+	padding: 0px 20px;
+	margin: 0 auto;
 	background-color: rgb(247, 247, 206);
 }
 .nosotras {
@@ -116,7 +114,6 @@ main {
 }
 .contacto {
 	border: solid 1px black;
-	
 }
 .contacto img {
 	width: 8%;
@@ -125,6 +122,18 @@ main {
 	text-align: center;
 	text-decoration: none;
 	color: black;
+	font-size: 0.9em;
+}
+.details img {
+	width: 3%;
+}
+.details summary {
+	padding: 2px;
+}
+.details a {
+	text-decoration: none;
+	color: black;
+	padding: 2px;
 	font-size: 0.9em;
 }
 
