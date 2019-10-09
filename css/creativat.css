@@ -1,0 +1,119 @@
+/* Estilos CSS CreativaT */
+
+body,td,th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 1.2em;
+	color: #4C4C4C;
+}
+body {
+    background-color: white;
+    font-size: 1.2em;
+	width: 100%;
+    margin:0 auto;
+    padding: 20px;
+}
+
+/*------------ HEADER ----------------*/
+#padre_header {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1;  /*Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	margin-bottom: 40px;
+	background-color: white;
+}
+#logo {
+	border: solid 2px black;
+}
+#img_logo {
+    margin-right: 10px;
+	float: left;
+	width: 60%;
+}
+#navegacion {
+	border: solid 2px black;
+	padding-top: 28px;
+	padding-right: 30px;
+}
+#navegacion a {
+	text-decoration:none;
+	font-size: 1.2em;
+	color: black;
+	margin-right: 10px;
+	padding-right: 30px;
+}
+main {
+	margin-top: 20px;
+}
+
+/*----------LIGHTBOX-----------------*/
+.cuadroGrande {
+    display: none;
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 99999;
+	overflow: hidden;
+}
+.cuadroBlanco {
+    display: block;  
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	width: auto;
+	background-color: rgba(255,255,255,1.00);
+	padding: 10px;
+	cursor: pointer;
+}
+.foto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.contenido {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10%
+}
+.cerrar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nosotras{
+	overflow: hidden;
+	margin: 0 3%;
+}
+.nosotras img{
+	float: left;
+	width: 15%;
+	margin-right: 1%;
+}
+.nosotras figcaption {
+	padding-top: 3%;
+}
+#contacto {
+	font-size: 0.9em;
+	margin-top: 1%;
+}
+#contacto img{
+	width: 25%;
+}
+#contacto a{
+	text-align: center;
+	text-decoration: none;
+}
+
