@@ -14,13 +14,21 @@ body {
 }
 
 /*------------ HEADER ----------------*/
-#padre_header {
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1;  /*Stay on top */
-	top: 0; /* Stay at the top */
-	left: 0;
-	margin-bottom: 40px;
+.encabezado {
+	margin: 20px auto;
+	width: 40%;
+	/*border: solid 1px black;*/
+}
+.encabezado img {
+	width: 90%;
+}
+#slide_down {
+	position: fixed; /* Make it stick/fixed */
+  	top: -100px; /* Hide the navbar 50 px outside of the top view */
+  	width: 100%; /* Full width */
+  	transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	background-color: rgb(247, 247, 206);
+	z-index: 1;
 }
 #logo {
 	border: solid 2px black;
