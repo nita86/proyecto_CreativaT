@@ -13,31 +13,29 @@ function scrollFunction() {
   }
 }
 
-//------------TALLERES 19/20 slideshow--------------------
-var slideIndex = 1;
-showSlides(slideIndex);
-// Next/previous controls
+//------------TALLERES 19/20 slideshow----------------
+var fotosIndex = 1;
+muestraSlide(fotosIndex);
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  muestraSlide(fotosIndex += n);
 }
-// Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  muestraSlide(fotosIndex = n);
 }
-function showSlides(n) {
+function muestraSlide(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var fotos = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  if (n > fotos.length) {fotosIndex = 1}//cuando llega a la ultima foto, vuelve a la primera   
+  if (n < 1) {fotosIndex = fotos.length}//cuando está en la primera foto, el índice es la cantidad total de fotos
+  for (i = 0; i < fotos.length; i++) {
+      fotos[i].style.display = "none";//oculta las fotos
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");//cambia el estilo css de la clase active a ninguna
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  fotos[fotosIndex-1].style.display="block";
+  dots[fotosIndex-1].className += " active";
 }
 
 //--------TALLERES 18/19 lightbox----------------
