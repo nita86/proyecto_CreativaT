@@ -130,7 +130,7 @@ body {
   
 /*----------LIGHTBOX-----------------*/
 .cuadroGrande {
-    display: none;
+  display: none;
 	position: fixed;
 	left:0;
 	top:0;
@@ -141,7 +141,7 @@ body {
 	overflow: hidden;
 }
 .cuadroBlanco {
-    display: block;  
+  display: block;  
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -154,26 +154,81 @@ body {
 	padding: 10px;
 	cursor: pointer;
 }
-.foto {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
-}
 .contenido {
     width: 100%;
     margin: 0 auto;
-    padding-left: 10%
 }
-.cerrar {
+.texto_cuadroBlanco {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding: 0 1%;
 }
+.verMas {
+  font-size: 1em;
+  color: blue;
+  font-weight: bold;
+  font-style: italic;
+}
+.cerrar {
+  font-size: 1.2em;
+}
+
+/*---------------PORTFOLIO-------------------*/
+
+.portfolio {
+  display: flex;
+  position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 99999;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
 
 /*---------------FOOTER---------------------*/
 footer {

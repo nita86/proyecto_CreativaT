@@ -49,8 +49,14 @@ function cerrar2() {
     document.getElementById("cuadroGrande").style.display="none";
 }
 
+
 function fotosSrc(src) {//sacamos la información de this.src y la traemos a través del parametro src. 
     var foto='<img src="'+src+'">';
     document.getElementById("contenido").innerHTML=foto;
     document.getElementById("cuadroGrande").style.display="block";
+}
+
+//--------TALLERES 18/19 portfolio-----------------
+function fieltro() {
+    document.getElementsById("portfolio1").style.display="block";
 }

@@ -132,43 +132,160 @@
     </section><!--FIN TALLERES 19/20-->
      
     <section><!--TALLERES 18/19 LIGHTBOX-->
+
 <!-----------LIGHT BOX------------->
 <div  id="cuadroGrande" class="cuadroGrande" onclick="cerrar2()"><!--cuadro negro que tapa todo-->
   <div id="cuadroBlanco" class="cuadroBlanco"><!--cuadro blanco que enmarca la foto-->
-      <div class="cerrar"><!--cerrar-->
-        <div onclick="cerrar()">CERRAR<span> &times;</span></div>
-      </div><!--cerrar-->
+        <div class="texto_cuadroBlanco">
+            <div onclick="cerrar()" class="cerrar">CERRAR <span>&times;</span></div>
+        </div><!--texto_cuadroBlanco-->
       <div id="contenido" class="contenido"><!--contenido-->
       </div><!--contenido-->
   </div><!--cuadro blanco que enmarca la foto-->
 </div><!--cuadro negro que tapa todo-->
 <!-----------fin LIGHT BOX-------------->     
+
     <div class="w3-container w3-padding-32">  
     <h3>Ultimos talleres del curso 18/19</h3>
         <div class="row">
-            <div class="col-4"><!--teñido-->
+            <div class="col-3"><!--fielto-->
+            <h4>Fieltro de Halloween</h4>
+            <figure>
+                <img src="../img/18-19/fieltro_halloween.jpg" alt="Halloween" onclick="fotosSrc(this.src)" style="width:100%">
+                <figcaption>Adorables figuras de fieltro para decorar la casa en Halloween<br>#decoracion #halloween #fieltro #DIY #handmade</figcaption>
+            </figure>
+            <div onclick="fieltro()" class="verMas">VER MÁS...</div>
+            <!-------------PORTFOLIO fieltro----------------->
+                <div id="portfolio1">
+                    <div class="row">
+                    <div class="column">
+                    <div class="content">
+                        <img src="../img/18-19/fieltro_bruja.jpg" alt="bruja" style="width:100%">
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="content">
+                        <img src="../img/18-19/fieltro_fantasma.JPG" alt="fantasma1" style="width:100%">
+                    </div>
+                    </div>
+                    <div class="column">
+                    <div class="content">
+                        <img src="../img/18-19/fieltro_fantasma.jpg" alt="fantasma2" style="width:100%">
+                    </div>
+                    </div>
+                </div>
+                </div>
+            <!--------FIN PORTFOLIO fieltro----------->
+            </div><!--fin fieltro-->
+
+            <div class="col-3"><!--teñido-->
             <h4>Shibori</h4>
             <figure>
 				<img src="../img/18-19/teñido_crisalida2.jpg" alt="shibori" onclick="fotosSrc(this.src)" style="width:100%">
 				<figcaption>Técnica manual japonesa de teñido por reserva que produce patrones de color en las telas <br>#shibori #teňido #reciclandoropa #camisetaspersonalizadas #ropachula #DIY #handmade</figcaption>
             </figure>
+            <div onclick="teñido()" class="verMas">VER MÁS...</div>
+            <!-------------PORTFOLIO TEÑIDO----------------->
+            <div id="portfolio2">
+                <div class="row">
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/teñido_camiseta1.jpg" alt="camiseta1" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/teñido_camiseta2.jpg" alt="camiseta2" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/teñido_crisalida1.jpg" alt="crisalida1" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/teñido_crisalida2.jpg" alt="crisalida2" style="width:100%">
+                </div>
+                </div>
+            </div>
+            </div>
+            <!--------FIN PORTFOLIO TEÑIDO--------->
             </div><!--fin teñido-->
             
-            <div class="col-4"><!--libre-->
-            <h4>Taller libre</h4>
+            <div class="col-3"><!--libre-->
+            <h4>Taller libre & Ganchillo</h4>
 			<figure>
 				<img src="../img/18-19/ganchillo_pulpo.jpg" alt="libre" onclick="fotosSrc(this.src)" style="width:100%">
 				<figcaption>Todas tenemos un montón de proyectos a medias...y estos talleres son perfectos para ponernos al dia <br></figcaption>
             </figure>
+            <div onclick="libre()" class="verMas">VER MÁS...</div>
+            <!-------------PORTFOLIO LIBRE----------------->
+            <div id="portfolio3">
+                <div class="row">
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/botella1.jpg" alt="botella1" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/flores_papel1.jpg" alt="flores1" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/flores_papel2.jpg" alt="flores2" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/ganchillo_bolso.jpg" alt="bolso" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/ganchillo_flores.jpg" alt="flores" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/ganchillo_sw1.JPG" alt="sw1" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/ganchillo_sw2.JPG" alt="sw2" style="width:100%">
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/ganchillo_sw3.JPG" alt="sw3" style="width:100%">
+                </div>
+                </div>
+            </div>
+            </div>
+            <!--------FIN PORTFOLIO LIBRE-->
             </div><!--fin libre-->
 
-            <div class="col-4"><!--dulceros-->
+            <div class="col-3"><!--dulceros-->
             <h4>Dulceros personalizados</h4>
             <figure>
 				<img src="../img/18-19/dulceros.jpg" alt="dulceros" onclick="fotosSrc(this.src)" style="width:100%">
 				<figcaption>Una estupenda idea para dar un recuerdo a los invitados a un cumple <br>#superman #wonderwoman #regalosoriginales #DIY #handmade #cumpleaños #detallesquemolan</figcaption>
             </figure>
+            <div onclick="dulceros()" class="verMas">VER MÁS...</div>
+            <!-------------PORTFOLIO DULCEROS----------------->
+            <div id="portfolio4">
+                <div class="row">
+                <div class="column">
+                <div class="content">
+                    <img src="../img/18-19/dulceros2.jpg" alt="dulcero" style="width:100%">
+                </div>
+                </div>
+            <!--------FIN PORTFOLIO DULCEROS----------->
             </div><!--fin dulceros-->
+
         </div><!--fin row-->
     </div>   
     </section><!--TALLERES 18/19 LIGHTBOX-->
