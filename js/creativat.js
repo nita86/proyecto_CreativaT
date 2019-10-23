@@ -57,6 +57,25 @@ function fotosSrc(src) {//sacamos la información de this.src y la traemos a tra
 }
 
 //--------TALLERES 18/19 portfolio-----------------
+//fuente https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open5
 function fieltro() {
-    document.getElementsById("portfolio1").style.display="block";
+    var contenidoFieltro = window.open("", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=200,width=500,height=500"); 
+    var mostrarFieltro = document.getElementById("fieltro").innerHTML;
+    contenidoFieltro.document.write(mostrarFieltro);
 }
+function tinte() {
+  var contenidoTinte = window.open("", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=200,width=500,height=500"); 
+  var mostrarTinte = document.getElementById("tinte").innerHTML;
+  contenidoTinte.document.write(mostrarTinte);
+}
+function libre() {
+  var contenidoLibre = window.open("", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=200,width=500,height=500"); 
+  var mostrarLibre = document.getElementById("libre").innerHTML;
+  contenidoLibre.document.write(mostrarLibre);
+}
+function dulceros() {
+  var contenidoDulceros = window.open("", "_blank","toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=200,width=500,height=500"); 
+  var mostrarDulceros = document.getElementById("dulceros").innerHTML;
+  contenidoDulceros.document.write(mostrarDulceros);
+}
+
