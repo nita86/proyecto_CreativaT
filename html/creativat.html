@@ -27,6 +27,24 @@
 
 </head>
 <body>
+<!--VENTANA COOKES-->
+<div id="cuadrogrande" class="ocultaTodo"><!--cuadroGrande-->
+    <div class="gris" onmouseup="checkCookie();cerrar()">&nbsp;</div>
+    <div id="ventana" class="cookies"><!--ventana negra-->
+      <div class="container1"><!--hijo1-->
+        <div class="textoCookie">
+          <p class="p">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. Puede cambiar la configuración u obtener más información <a href="#" onclick="abrirTexto()" class="enlace">aquí</a></p>
+        </div>
+        <div class="x">  
+          <button class="btn btn-outline-danger btn-lg" type="button" onmouseup="checkCookie();cerrar()">&times;</button>
+        </div>
+      </div><!--fin hijo1-->
+      <div class="cerrarCookie"><!--hijo2-->
+        <button class="btn btn-outline-danger btn-lg" type="button" onmouseup="checkCookie();cerrar()">ACEPTAR</button>
+      </div><!--fin hijo2-->
+    </div><!--fin ventana negra-->
+  </div><!--fin cuadroGrande-->
+  
     <header>
     <div class="encabezado"><!--imagen principal-->
         <img src="../img/logo_transparente.png" alt="imagen_principal_CreativaT">
