@@ -33,13 +33,13 @@ function checkCookie() {
   } else {//`pide el nombre de usuario y crea la cookie
      user = prompt("introduce tu nombre:","");
      if (user != "" && user != null) {
-      setCookie("username", user, 30);//creada: viernes, 5 de abril de 2019, 9:15:14 caduca: domingo, 5 de mayo de 2019, 9:15:14
-      alert("Bienvenid@"+user);
+      setCookie("username", user, 365);//creada: 24 de octubre de 2019, caduca 24 de octubre de 2020
+      alert("Bienvenid@ "+user);
     }
     }
 }
 
-function cerrar() {
+function cerrarCookie() {
    document.getElementById("cuadrogrande").style.display="none";
 }
 
