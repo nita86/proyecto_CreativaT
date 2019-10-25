@@ -59,11 +59,6 @@ body {
   float: left;
   width: 95%;
 }
-.x {
-  width: auto;
-  padding: 5px;
-  font-size: x-large;
-}
 .cerrarCookie {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +306,14 @@ footer {
   color: black;
   margin: 3%;
   cursor: pointer;
+}
+.pie {
+  color: black;
+  margin-top: 1%;
+}
+.pie a {
+  color: black;
+  text-decoration: none;
 }
 .details img {
 	width: 3%;
