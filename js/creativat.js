@@ -61,6 +61,12 @@ function scrollFunction() {
   }
 }
 
+function mostrar() {
+  document.getElementById("menu").style.display="block";
+}
+function ocultar() {
+  document.getElementById("menu").style.display="none";
+}
 //------------TALLERES 19/20 slideshow----------------
 var fotosIndex = 1;
 muestraSlide(fotosIndex);

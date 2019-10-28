@@ -31,20 +31,22 @@
 
 </head>
 <body>
-<!--VENTANA COOKES-->
-<div id="cuadrogrande" class="ocultaTodo"><!--cuadroGrande-->
+
+<!--COMENTAMOS LA VENTANA COOKIES PARA PODER TRABAJAR MEJOR AL ACTUALIZAR Y VER LOS CAMBIOS-->
+<!---VENTANA COOKES-->
+<!--<div id="cuadrogrande" class="ocultaTodo">cuadroGrande
     <div class="gris" onmouseup="checkCookie();cerrar()">&nbsp;</div>
-    <div id="ventana" class="cookies"><!--ventana negra-->
-      <div class="container1"><!--hijo1-->
+    <div id="ventana" class="cookies"><!--ventana negra
+      <div class="container1"><!--hijo1
         <div class="textoCookie">
           <p class="p">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. Puede obtener más información <a href="#" onclick="abrirTexto()" class="enlace">aquí</a></p>
         </div>
 
-      </div><!--fin hijo1-->
-      <div class="cerrarCookie"><!--hijo2-->
+      </div><!--fin hijo1
+      <div class="cerrarCookie"><!--hijo2
         <button class="btn btn-outline-danger btn-lg" type="button" onmouseup="cerrarCookie()">ACEPTAR</button>
-      </div><!--fin hijo2-->
-    </div><!--fin ventana negra-->
+      </div><!--fin hijo2
+    </div><!--fin ventana negra
   </div><!--fin cuadroGrande-->
   
     <header>
@@ -60,8 +62,12 @@
 <!--fin Logo-->
 
 <!--NavBar-->
-    <div id="navegacion" class="col-8 w3-hide-small text-right"><!--oculta la navegación en pantallas pequeñas-->
-        <a href="#talleres">Talleres</a>
+    <div id="navegacion" class="col-8 w3-hide-small text-right dropdown"><!--oculta la navegación en pantallas pequeñas-->
+        <a href="#" onmouseover="mostrar()">Talleres</a><!--Al pasar por encima talleres se despliega--> 
+        <div class="dropdown-content" id="menu" onmouseover="mostrar()" onmouseout="ocultar()">
+            <a href="#talleres19">Talleres 19/20</a>
+            <a href="#talleres18">Talleres 18/19</a>
+        </div>
         <a href="#nosotras">Sobre Nosotras</a>
         <a href="#contacto">Contacto</a>
     </div>
@@ -69,11 +75,11 @@
 	</div>
     </div><!--fin slide_down-->
     </header>
-<br id="talleres"><br>
+<br><br>
     <main>
     
-    <section><!--TALLERES 19/20 SLIDESHOW-->
-    <h3 class="w3-container">Talleres del curso 19/20</h3>
+    <section id="talleres19"><!--TALLERES 19/20 SLIDESHOW-->
+    <h3 class="w3-container" >Talleres del curso 19/20</h3>
     <!-- Slideshow container -->
     <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -141,7 +147,7 @@
       </div>
     </section><!--FIN TALLERES 19/20-->
      
-    <section><!--TALLERES 18/19 LIGHTBOX-->
+    <section id="talleres18"><!--TALLERES 18/19 LIGHTBOX-->
 
 <!-----------LIGHT BOX------------->
 <div  id="cuadroGrande" class="cuadroGrande" onclick="cerrar2()"><!--cuadro negro que tapa todo-->

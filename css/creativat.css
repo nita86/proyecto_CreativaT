@@ -113,7 +113,35 @@ body {
 	font-size: 1.3em;
 	color:#8724a0;
 	margin-right: 10px;
-	padding-right: 30px;
+  padding-right: 30px;
+  padding: 1%;
+}
+#navegacion a:hover {
+  color: blue;
+  font-weight: bold;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:rgb(237, 246, 227);
+  left: 47%;
+  z-index: 1;
+  font-size: 0.8em;
+  text-align: right;
+  max-width: auto;
+}
+.dropdown-content a {
+  color: #8724a0;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: blue;
+  font-weight: bold;
 }
 
 /*----------SLIDESHOW-----------*/
