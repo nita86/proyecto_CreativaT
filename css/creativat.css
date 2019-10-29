@@ -15,6 +15,13 @@ body {
 	width: 100%;
   margin:0 auto;
 }
+h3 {
+  color: rgb(218, 28, 147); 
+  font-weight: bolder;
+}
+h4 {
+  color: rgba(52, 5, 207, 0.863);
+}
 
 /*------------ COOKIES ---------------*/
 /*COOKES https://autoprefixer.github.io/*/
@@ -95,7 +102,7 @@ body {
   -webkit-transition: top 0.3s;
   -o-transition: top 0.3s;
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  background-color:rgb(237, 246, 227);
+  background-color:#D2F2F7;
   z-index: 1;
 }
 #img_logo {
@@ -111,13 +118,13 @@ body {
 #navegacion a {
 	text-decoration:none;
 	font-size: 1.3em;
-	color:#8724a0;
+	color:rgba(52, 5, 207, 0.863);
 	margin-right: 10px;
   padding-right: 30px;
   padding: 1%;
 }
 #navegacion a:hover {
-  color: blue;
+  color: #DA1C93;
   font-weight: bold;
 }
 .dropdown {
@@ -127,21 +134,21 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:rgb(237, 246, 227);
-  left: 47%;
+  background-color:#D2F2F7;
+  left: 52%;
   z-index: 1;
   font-size: 0.8em;
   text-align: right;
   max-width: auto;
 }
-.dropdown-content a {
-  color: #8724a0;
+#menu a {
+  color:rgba(52, 5, 207, 0.863);
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {
-  color: blue;
-  font-weight: bold;
+#menu a:hover {
+  color: #DA1C93;
+  font-weight:bold;
 }
 
 /*----------SLIDESHOW 
