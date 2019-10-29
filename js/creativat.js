@@ -38,11 +38,9 @@ function checkCookie() {
     }
     }
 }
-
 function cerrarCookie() {
    document.getElementById("cuadrogrande").style.display="none";
 }
-
 function abrirTexto() {
     var nuevaVentana=window.open("politica_de_cookes.html", "Mensaje_cookies", "width=800,height=500");//lo abre en una ventana nueva
     nuevaVentana.document.write();//fin document.write
@@ -52,7 +50,6 @@ function abrirTexto() {
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("slide_down").style.top = "0";
@@ -60,7 +57,6 @@ function scrollFunction() {
     document.getElementById("slide_down").style.top = "-100px";
   }
 }
-
 function mostrar() {
   document.getElementById("menu").style.display="block";
 }
@@ -92,6 +88,12 @@ function muestraSlide(n) {
   dots[fotosIndex-1].className += " active";
 }
 
+//---------TALLERES 19/20 contenido-----------
+function abrirOctubre() {
+  var octubre=window.open("octubre.html", "fotos_octubre", "width=800,height=500");//lo abre en una ventana nueva
+  octubre.document.write();//fin document.write
+}
+
 //--------TALLERES 18/19 lightbox----------------
 function abrir() {
     document.getElementById("cuadroGrande").style.display="block";
@@ -102,8 +104,6 @@ function cerrar() {
 function cerrar2() {
     document.getElementById("cuadroGrande").style.display="none";
 }
-
-
 function fotosSrc(src) {//sacamos la información de this.src y la traemos a través del parametro src. 
     var foto='<img src="'+src+'">';
     document.getElementById("contenido").innerHTML=foto;

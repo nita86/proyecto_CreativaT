@@ -15,7 +15,7 @@ body {
 	width: 100%;
   margin:0 auto;
 }
-h3 {
+h1,h3 {
   color: rgb(218, 28, 147); 
   font-weight: bolder;
 }
