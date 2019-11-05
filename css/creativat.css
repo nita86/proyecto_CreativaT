@@ -231,9 +231,16 @@ h4 {color: rgba(52, 5, 207, 0.863);}
   max-width: 50%;
   padding:10px;
 }
-.column_Galeria img {
-  margin-top: 8px;
+.polaroid {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+.polaroid img {
   vertical-align: middle;
+  width: 100%;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
