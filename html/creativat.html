@@ -4,7 +4,7 @@
 <head>
 <title>CreativaT</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description" content="Blog de CreativaT, Grupo de Manualidades">
 <meta name="title" content="GreativaT, Grupo de Manualidades">
@@ -60,17 +60,19 @@
         <img id="img_logo" src="../img/logo_transparente.png" alt="logoCreativaT">
     </div>
 <!--fin Logo-->
-
 <!--NavBar-->
-    <div id="navegacion" class="col-8 w3-hide-small text-right dropdown"><!--oculta la navegación en pantallas pequeñas-->
-        <a href="#" onmouseover="mostrar()">Talleres</a><!--Al pasar por encima talleres se despliega--> 
-        <div class="dropdown-content" id="menu" onmouseover="mostrar()" onmouseout="ocultar()">
-            <a href="#talleres19">Talleres 19/20</a>
-            <a href="#talleres18">Talleres 18/19</a>
-        </div>
-        <a href="#nosotras" onmouseout="ocultar()">Sobre Nosotras</a>
-        <a href="#contacto" onmouseout="ocultar()">Contacto</a>
-    </div>
+    <div class="topnav col-8" id="navegacion">
+        <div class="dropdown">
+            <button class="dropbtn">Talleres <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#talleres19">Talleres 19/20</a>
+                <a href="#talleres18">Talleres 18/19</a>
+            </div>
+        </div> 
+        <div><a href="#nosotras">Sobre Nosotras</a></div>
+        <div><a href="#contacto">Contacto</a></div>
+        <div><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a></div>
+   </div>         
 <!--fin Navbar-->
 	</div>
     </div><!--fin slide_down-->

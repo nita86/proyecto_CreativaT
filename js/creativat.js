@@ -54,14 +54,16 @@ function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("slide_down").style.top = "0";
   } else {
-    document.getElementById("slide_down").style.top = "-100px";
+    document.getElementById("slide_down").style.top = "-200px";
   }
 }
-function mostrar() {
-  document.getElementById("menu").style.display="block";
-}
-function ocultar() {
-  document.getElementById("menu").style.display="none";
+function navBar() {
+  var x = document.getElementById("navegacion");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 //------------TALLERES 19/20 slideshow----------------
