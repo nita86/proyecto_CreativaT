@@ -61,20 +61,20 @@
     </div>
 <!--fin Logo-->
 <!--NavBar-->
-    <div class="topnav col-8" id="navegacion">
-        <div class="dropdown">
-            <button class="dropbtn">Talleres <i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="#talleres19">Talleres 19/20</a>
-                <a href="#talleres18">Talleres 18/19</a>
-            </div>
-        </div> 
-        <div><a href="#nosotras">Sobre Nosotras</a></div>
-        <div><a href="#contacto">Contacto</a></div>
-        <div><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navBar()">&#9776;</a></div>
-   </div>         
+    <div id="navegacion" class="col-8 w3-hide-small text-right dropdown"><!--oculta la navegación en pantallas pequeñas-->
+        <ul>
+            <li><a href="#">Talleres</a><!--Al pasar por encima talleres se despliega-->
+                <ul>
+                    <li><a href="talleres19">Talleres 19/20</a></li>
+                    <li><a href="talleres18">Talleres 18/19</a></li>
+                </ul>
+            </li>
+            <li><a href="#nosotras">Sobre Nosotras</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>        
 <!--fin Navbar-->
-	</div>
+	</div><!--fin row-->
     </div><!--fin slide_down-->
     </header id="talleres19">
 <br><br>
@@ -82,6 +82,7 @@
     
     <section ><!--TALLERES 19/20 SLIDESHOW-->
     <h3 class="w3-container">Talleres del curso 19/20</h3>
+    <div id="slideshow">
     <!-- Slideshow container -->
     <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
@@ -138,6 +139,7 @@
         <span class="dot" onclick="currentSlide(8)"></span>
         <span class="dot" onclick="currentSlide(9)"></span>
       </div>
+    </div><!--fin padre slideshow-->
     </section><!--FIN TALLERES 19/20-->
 <br id="talleres18"><br>
     <section><!--TALLERES 18/19 LIGHTBOX-->

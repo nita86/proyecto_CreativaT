@@ -48,21 +48,13 @@ function abrirTexto() {
 
 //---------ENCABEZADO slide_down-----------
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+// When the user scrolls to the top of the page, slide up the navbar (100px out of the top view)
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("slide_down").style.top = "0";
   } else {
-    document.getElementById("slide_down").style.top = "-200px";
-  }
-}
-function navBar() {
-  var x = document.getElementById("navegacion");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+    document.getElementById("slide_down").style.top = "-100px";
   }
 }
 
